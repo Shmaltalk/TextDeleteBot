@@ -50,14 +50,15 @@ client.on('guildMemberAdd', member => {
   combo = stupidcolors[Math.floor(Math.random() * stupidanimals.length)] + " " +
           stupidanimals[Math.floor(Math.random() * stupidanimals.length)]
   member.setNickname(combo);
-  member.send(`Welcome to chime!
-**Heres how to get set up:**
-- 1st step: block direct messaging by clicking on the "Chime" server name in the top left corner (make sure you are on the chime server page), going to "Privacy Settings", and disabling direct messaging
-- 2nd step: set your notification settings by going to "Notification Settings" in the server settings tab, (again accessed by clicking on the "Chime" server name while on the chime server). From there, check "Only @mentions"\n\n
-**Now that your setup is done, you can start posting!**
-Chime only allows for emoji based text posts, so any message you send containing text will be deleted.
-We prefer that you post in a format of one main emoji, representing your mood, followed by an arbitrary number of "story emojis", which will be used to describe your mood. Try to separate your main emoji from your story emojis with a dash. Example: 😊-🎨📚📖☀️
-We encourage members to post once a day and we will be sending daily reminders to help you remember to post!
-We encourage you to also use the discord reaction feature to respond to other posts.
-Thanks so much for helping us out and have fun using Chime!`)
+  member.send(`**Welcome to chime!**\n
+**Heres how to get set up:**\n
+> 1st step: block direct messaging by clicking on the "Chime" server name in the top left corner (make sure you are on the chime server page), going to "Privacy Settings", and disabling direct messaging\n
+> 2nd step: set your notification settings by going to "Notification Settings" in the server settings tab, (again accessed by clicking on the "Chime" server name while on the chime server). From there, check "Only @mentions"\n\n
+**Now that your setup is done, you can start posting!**\n
+> Chime only allows for emoji based text posts, so any message you send containing text will be deleted.\n
+> We prefer that you post in a format of one main emoji, representing your mood, followed by an arbitrary number of "story emojis", which will be used to describe your mood. Try to separate your main emoji from your story emojis with a dash. Example: 😊-🎨📚📖☀️\n
+> We encourage members to post once a day and we will be sending daily reminders to help you remember to post!\n
+> We encourage you to also use the discord reaction feature to respond to other posts.\n
+> Thanks so much for helping us out and have fun using Chime!\n\n
+**Setup Reference Images**\n\n`, {files: ["https://i.imgur.com/Ox1ePLr.png", "https://i.imgur.com/0kNOeZq.png"]})
 })
